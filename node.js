@@ -2,37 +2,45 @@ const prompt = require("prompt-sync")();
 
 console.log("Welcome to the Computer Hardware Quiz!")
 
-const  answer1= prompt(" What is the brain of the computer?");
-const correct_answer1 = "CPU";
+let correctAnswers = 0; 
 
-if(answer1.toUpperCase() === correct_answer1) {
-    console.log("You got it correct")
+const  answer1= prompt(" What is the brain of the computer?");
+const correctAnswer1 = "CPU";
+
+if(answer1.toUpperCase() === correctAnswer1) {
+    console.log("You got it correct");
+    correctAnswers++;
 }else {
-    console.log("You got it wrong...")
+    console.log("You got it wrong...");
 }
 
 
-const  answer2= prompt(" What is better VSCODE OR REPLIT? ");
-const correct_answer2 = "vscode";
 
-if(answer2.toLowerCase() === correct_answer2) {
-    console.log("You got it correct")
+
+
+const  answer2= prompt(" What is better VSCODE OR MAC? ");
+const correctAnswer2 = "vscode";
+
+if(answer2.toLowerCase() === correctAnswer2) {
+    console.log("You got it correct");
+    correctAnswers++;
 }else {
-    console.log("You got it wrong...")
+    console.log("You got it wrong...");
 }
 
 
 const  answer3= prompt(" What is better PC OR LAPTOP ");
-const correct_answer3 = "pc";
+const correctAnswer3 = "pc";
 
-if(answer3.toLowerCase() === correct_answer3) {
-    console.log("You got it correct")
+if(answer3.toLowerCase() === correctAnswer3) {
+    console.log("You got it correct");
+    correctAnswers++;
 }else {
-    console.log("You got it wrong...")
+    console.log("You got it wrong...");
 }
 
 
-
+console.log("You Got", correctAnswers, "Questions correct!" )
 
 
 
