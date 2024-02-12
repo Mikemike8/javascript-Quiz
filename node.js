@@ -43,9 +43,11 @@ if(answer3.toLowerCase() === correctAnswer3) {
 }
 
 
+const percent = Math.round((correctAnswers / totalQuestions) * 100);
+
 console.log("You Got", correctAnswers, "Questions correct!" )
 
-console.log("You Scored", (correctAnswers / totalQuestions) * 100, "Percent!" )
+console.log("You Scored", percent, "Percent!" )
 
 
 
